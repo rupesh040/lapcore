@@ -1,0 +1,449 @@
+{
+  "Lapcore": {
+    "metadata": {
+      "title": "LAPCORE | Laptop Repair & Services",
+      "description": "Laptop repair and service center for screen and battery replacement, hardware repairs, and software support.",
+      "icon": "/lapcore/icon.png",
+      "language": "en"
+    },
+    "contact": {
+      "address": "123 Tech Avenue, Austin, TX 78701",
+      "phone": "+1 000-000-000",
+      "email": "info@xyz.com"
+    },
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "Topbar": "LapcoreTopbar1",
+          "Header": "LapcoreHeader1",
+          "Footer": "LapcoreFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "Banner",
+                "component": "LapcoreBanner1"
+              },
+              {
+                "key": "About",
+                "component": "LapcoreAbout1"
+              },
+              {
+                "key": "Services",
+                "component": "LapcoreServices1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "LapcoreWhyChooseUs1"
+              },
+              {
+                "key": "Testimonial",
+                "component": "LapcoreTestimonial1"
+              },
+              {
+                "key": "FAQ",
+                "component": "LapcoreFAQ1"
+              },
+              {
+                "key": "Contact",
+                "component": "LapcoreContact1"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "sections": {
+      "Topbar": {
+        "variants": {
+          "LapcoreTopbar1": {
+            "locationLabel": "Visit Our Service Center:"
+          }
+        }
+      },
+      "Header": {
+        "variants": {
+          "LapcoreHeader1": {
+            "logo": "/lapcore/logo.webp",
+            "logoAlt": "LAPCORE Laptop Repair & Services",
+            "logoHref": "#home",
+            "navigationLabel": "Main navigation",
+            "mobileNavigationLabel": "Mobile navigation",
+            "menuLabel": "Navigation menu",
+            "links": [
+              {
+                "name": "Home",
+                "href": "#home",
+                "active": true
+              },
+              {
+                "name": "About Us",
+                "href": "#about"
+              },
+              {
+                "name": "Services",
+                "href": "#services"
+              },
+              {
+                "name": "Why Choose Us",
+                "href": "#why-choose-us"
+              },
+              {
+                "name": "Testimonials",
+                "href": "#testimonials"
+              },
+              {
+                "name": "FAQs",
+                "href": "#faq"
+              }
+            ],
+            "button": "Contact Us",
+            "buttonHref": "#contact"
+          }
+        }
+      },
+      "Banner": {
+        "variants": {
+          "LapcoreBanner1": {
+            "id": "home",
+            "banners": [
+              "/lapcore/hero.webp"
+            ],
+            "brand": "LAPCORE",
+            "cursiveText": "Laptop Repair & Service Center",
+            "heading": "Expert Laptop Repair\nwith Precision, Speed, and",
+            "headingPart2": "Long-Lasting Performance",
+            "features": [
+              "Fast Repair Service",
+              "Certified Expert Technicians",
+              "Genuine Quality Parts"
+            ],
+            "buttonText": "Bring Your Laptop Back to Life",
+            "buttonHref": "#contact"
+          }
+        }
+      },
+      "About": {
+        "variants": {
+          "LapcoreAbout1": {
+            "id": "about",
+            "cursiveText": "About LAPCORE",
+            "headingPart1": "Reliable Laptop Repair Solutions",
+            "headingPart2": "Under One Roof",
+            "description": "At LAPCORE, we are committed to delivering fast, reliable, and professional laptop repair services. From hardware issues to performance upgrades, our expert technicians ensure your device is in safe hands.",
+            "mainImage": "/lapcore/about.webp",
+            "imageAlt": "LAPCORE technician working on an open laptop",
+            "features": [
+              {
+                "icon": "Users",
+                "title": "Expert Technicians",
+                "description": "Skilled and experienced repair professionals."
+              },
+              {
+                "icon": "ShieldCheck",
+                "title": "Quality & Reliability",
+                "description": "Genuine parts and long-lasting solutions."
+              }
+            ]
+          }
+        }
+      },
+      "Services": {
+        "variants": {
+          "LapcoreServices1": {
+            "id": "services",
+            "cursiveText": "Our Services",
+            "headingPart1": "Comprehensive Laptop",
+            "headingPart2": "Repair Services",
+            "description": "From hardware fixes to software support, we provide complete laptop repair solutions to keep your device running at its best.",
+            "items": [
+              {
+                "icon": "Laptop",
+                "title": "Screen Replacement",
+                "description": "Cracked, damaged, or flickering screen repair & replacement."
+              },
+              {
+                "icon": "BatteryCharging",
+                "title": "Battery Replacement",
+                "description": "Restore long-lasting backup with genuine batteries."
+              },
+              {
+                "icon": "Cpu",
+                "title": "Motherboard Repair",
+                "description": "Expert-level diagnosis and component-level repair."
+              },
+              {
+                "icon": "Keyboard",
+                "title": "Keyboard Repair",
+                "description": "Fix or replace faulty, unresponsive, or damaged keyboards."
+              },
+              {
+                "icon": "HardDrive",
+                "title": "Data Recovery",
+                "description": "Safely recover lost or inaccessible data."
+              },
+              {
+                "icon": "AppWindow",
+                "title": "Software Support",
+                "description": "OS installation, updates, and performance optimization."
+              },
+              {
+                "icon": "Fan",
+                "title": "Overheating Fix",
+                "description": "Resolve heating issues and improve system cooling."
+              },
+              {
+                "icon": "LaptopUp",
+                "title": "Performance Upgrade",
+                "description": "Upgrade RAM, storage (SSD/HDD) and overall system speed."
+              }
+            ]
+          }
+        }
+      },
+      "WhyChooseUs": {
+        "variants": {
+          "LapcoreWhyChooseUs1": {
+            "id": "why-choose-us",
+            "cursiveText": "Why Choose Us",
+            "headingPart1": "Trusted Laptop Repair Experts",
+            "headingPart2": "You Can Rely On",
+            "description": "We combine technical expertise, quality parts, and a customer-first approach to deliver reliable, long-lasting laptop repair solutions.",
+            "image1": "/lapcore/why.webp",
+            "imageAlt": "LAPCORE technician repairing a laptop at a service bench",
+            "features": [
+              {
+                "icon": "Users",
+                "title": "Expert Technicians",
+                "description": "Skilled and experienced repair professionals."
+              },
+              {
+                "icon": "ShieldCheck",
+                "title": "Genuine Parts",
+                "description": "High-quality, reliable replacement parts."
+              },
+              {
+                "icon": "Timer",
+                "title": "Quick Turnaround",
+                "description": "Fast and efficient repair with minimal downtime."
+              },
+              {
+                "icon": "Headphones",
+                "title": "Reliable Support",
+                "description": "Friendly assistance before and after service."
+              }
+            ]
+          }
+        }
+      },
+      "Testimonial": {
+        "variants": {
+          "LapcoreTestimonial1": {
+            "id": "testimonials",
+            "cursiveText": "Testimonials",
+            "headingPart1": "What Our Happy",
+            "headingPart2": "Clients Say",
+            "description": "Real feedback from our valued customers who trust LAPCORE for reliable laptop repair.",
+            "items": [
+              {
+                "image": "/lapcore/jewel.webp",
+                "name": "Md Jewel",
+                "title": "Customer",
+                "quote": "Excellent laptop repair service with a quick turnaround. My laptop is working like new again, and the staff was very professional and helpful throughout the process.",
+                "rating": 4.5
+              },
+              {
+                "image": "/lapcore/samiul.webp",
+                "name": "Md Samiul",
+                "title": "Customer",
+                "quote": "Great experience! The team diagnosed the issue quickly and fixed it at a very reasonable price. Highly recommend LAPCORE for any laptop repair needs.",
+                "rating": 5
+              }
+            ],
+            "carouselLabels": {
+              "region": "Customer testimonials",
+              "roleDescription": "carousel",
+              "previous": "Previous testimonial",
+              "next": "Next testimonial",
+              "select": "Show testimonial from {name}",
+              "position": "{name}, testimonial {index} of {count}",
+              "rating": "{rating} out of 5 stars"
+            }
+          }
+        }
+      },
+      "FAQ": {
+        "variants": {
+          "LapcoreFAQ1": {
+            "id": "faq",
+            "cursiveText": "FAQ",
+            "headingPart1": "Frequently Asked",
+            "headingPart2": "Questions",
+            "description": "Find quick answers to common questions about our laptop repair services.",
+            "image": "/lapcore/faq.webp",
+            "imageAlt": "Open laptop motherboard and repair tools on a workbench",
+            "items": [
+              {
+                "question": "How long does a laptop repair usually take?",
+                "answer": "Most common repairs, such as screen or battery replacement, are completed within 1–2 hours. Complex issues like motherboard repair may take longer, depending on diagnosis and part availability."
+              },
+              {
+                "question": "Do you use genuine replacement parts?",
+                "answer": "Yes. LAPCORE uses genuine replacement parts for laptop repairs."
+              },
+              {
+                "question": "Is there a warranty on repairs?",
+                "answer": "Contact customer support to ask about warranty coverage for your repair."
+              },
+              {
+                "question": "Can you repair all laptop brands?",
+                "answer": "Contact customer support with your laptop’s brand and model to check repair availability."
+              },
+              {
+                "question": "Do I need to book an appointment?",
+                "answer": "Use the repair request form to share your preferred date. Our team will get in touch to confirm your repair slot."
+              }
+            ]
+          }
+        }
+      },
+      "Contact": {
+        "variants": {
+          "LapcoreContact1": {
+            "id": "contact",
+            "cursiveText": "Contact Us",
+            "headingPart1": "Need Help with Your Laptop?",
+            "headingPart2": "Contact Us",
+            "description": "Get in touch with LAPCORE and schedule your repair. Our expert team is here to provide fast, reliable, and hassle-free service for all your laptop needs.",
+            "backgroundImage": "/lapcore/contact.webp",
+            "infoCards": [
+              {
+                "icon": "Phone",
+                "method": "phone",
+                "title": "Phone"
+              },
+              {
+                "icon": "Mail",
+                "method": "email",
+                "title": "Email"
+              }
+            ],
+            "form": {
+              "title": "Schedule For Repair Slot",
+              "description": "Fill out the form below and our team will get in touch with you to confirm your repair slot.",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Your Name",
+                  "type": "text",
+                  "required": true
+                },
+                {
+                  "name": "phone",
+                  "label": "Phone No",
+                  "type": "tel",
+                  "required": true
+                },
+                {
+                  "name": "email",
+                  "label": "Email",
+                  "type": "email",
+                  "required": true
+                },
+                {
+                  "name": "date",
+                  "label": "Preferred Date",
+                  "type": "date"
+                },
+                {
+                  "name": "device",
+                  "label": "Device Type",
+                  "type": "select",
+                  "required": true,
+                  "placeholder": "Select Device",
+                  "options": [
+                    "Laptop"
+                  ]
+                },
+                {
+                  "name": "service",
+                  "label": "Service Type",
+                  "type": "select",
+                  "required": true,
+                  "placeholder": "Select Service"
+                },
+                {
+                  "name": "message",
+                  "label": "Message",
+                  "type": "textarea",
+                  "placeholder": "To better assist you, please describe how we can help..."
+                }
+              ],
+              "submit": "Send Request",
+              "requiredMark": "*",
+              "draftMessage": "Send the request from your email app.",
+              "draftLinkLabel": "Open the draft again"
+            }
+          }
+        }
+      },
+      "Footer": {
+        "variants": {
+          "LapcoreFooter1": {
+            "logo": "/lapcore/logo-light.webp",
+            "logoAlt": "LAPCORE Laptop Repair & Services",
+            "logoHref": "#home",
+            "description": "Professional laptop repair and service solutions with expert care, genuine parts, and a customer-first approach.",
+            "quickLinksTitle": "Quick Links",
+            "quickLinks": [
+              {
+                "name": "Home",
+                "href": "#home"
+              },
+              {
+                "name": "About Us",
+                "href": "#about"
+              },
+              {
+                "name": "Services",
+                "href": "#services"
+              },
+              {
+                "name": "FAQ",
+                "href": "#faq"
+              },
+              {
+                "name": "Contact Us",
+                "href": "#contact"
+              }
+            ],
+            "contactTitle": "Contact Info",
+            "socialTitle": "Follow Us",
+            "social": [
+              {
+                "name": "Facebook",
+                "icon": "facebook"
+              },
+              {
+                "name": "Instagram",
+                "icon": "instagram"
+              },
+              {
+                "name": "LinkedIn",
+                "icon": "linkedin"
+              },
+              {
+                "name": "YouTube",
+                "icon": "youtube"
+              }
+            ],
+            "bottomBar": {
+              "copyright": "© 2026 LAPCORE. All Rights Reserved."
+            }
+          }
+        }
+      }
+    }
+  }
+}

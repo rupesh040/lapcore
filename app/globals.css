@@ -1,26 +1,116 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-geist-sans), Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --color-brand: #0755b5;
+  --color-brand-dark: #073d86;
+  --color-navy: #081326;
+  --color-deep: #041c2d;
+  --color-muted: #344660;
+  --color-line: #d9e2ed;
+  --color-ice: #e7f1fc;
+  --color-accent: #35c5ef;
+  --animate-entrance: entrance 600ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  --animate-quick-entrance: entrance 220ms ease-out backwards;
+  --animate-fade-up: fade-up 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  --animate-fade-down: fade-down 500ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  --animate-fade-left: fade-left 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  --animate-fade-right: fade-right 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  --animate-scale-in: scale-in 600ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  --animate-blur-in: blur-in 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+
+  @keyframes entrance {
+    from {
+      opacity: 0;
+      translate: 0 0.75rem;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      translate: 0 2rem;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  @keyframes fade-down {
+    from {
+      opacity: 0;
+      translate: 0 -1.5rem;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  @keyframes fade-left {
+    from {
+      opacity: 0;
+      translate: -2.5rem 0;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  @keyframes fade-right {
+    from {
+      opacity: 0;
+      translate: 2.5rem 0;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      scale: 0.92;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes blur-in {
+    from {
+      opacity: 0;
+      filter: blur(8px);
+      translate: 0 1rem;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      translate: 0 0;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Scroll-reveal: hidden until observed ── */
+@media (prefers-reduced-motion: no-preference) {
+  [data-animate] {
+    opacity: 0;
+  }
+  [data-animate="fade-up"].revealed     { animation: fade-up 700ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  [data-animate="fade-down"].revealed   { animation: fade-down 500ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  [data-animate="fade-left"].revealed   { animation: fade-left 700ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  [data-animate="fade-right"].revealed  { animation: fade-right 700ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  [data-animate="scale-in"].revealed    { animation: scale-in 600ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  [data-animate="blur-in"].revealed     { animation: blur-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both; }
 }
