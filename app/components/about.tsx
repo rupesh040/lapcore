@@ -4,7 +4,7 @@ import { FeatureRow, SectionHeading } from "./section-parts";
 
 export function About({ data }: { data: SectionData["About"] }) {
   return (
-    <section id={data.id} className="bg-white py-14 lg:py-[91px]">
+    <section id={data.id} className="bg-white py-10">
       <div className="mx-auto grid w-full max-w-[1440px] items-center gap-8 px-5 sm:px-8 lg:grid-cols-[.78fr_1fr] lg:gap-[clamp(28px,3.65vw,55px)] xl:grid-cols-[.755fr_1fr] xl:items-start xl:pr-[44px] xl:pl-5">
         <Image data-animate="fade-left" src={data.mainImage} alt={data.imageAlt} width={531} height={537} sizes="(min-width: 1024px) 41vw, 94vw" className="order-last aspect-[531/537] w-full rounded-[3px] object-cover lg:order-first" />
         <div>

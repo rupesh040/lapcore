@@ -4,7 +4,7 @@ import { FeatureRow, SectionHeading } from "./section-parts";
 
 export function WhyChooseUs({ data }: { data: SectionData["WhyChooseUs"] }) {
   return (
-    <section id={data.id} className="bg-white py-15 lg:py-[112px] xl:py-[119px]">
+    <section id={data.id} className="bg-white py-10">
       <div className="mx-auto grid w-full max-w-[1440px] items-center gap-8 px-5 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-6 xl:pr-[23px] xl:pl-[clamp(42px,4vw,58px)]">
         <div className="min-w-0">
           <div data-animate="fade-left">
