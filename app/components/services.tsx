@@ -4,7 +4,7 @@ import { SectionHeading, sectionContainer } from "./section-parts";
 
 export function Services({ data }: { data: SectionData["Services"] }) {
   return (
-    <section id={data.id} className="bg-linear-to-br from-white via-[#fcfdfe] to-[#f4f8fc] py-10 lg:pb-9">
+    <section id={data.id} className="bg-linear-to-br from-white via-[#fcfdfe] to-[#f4f8fc] py-12 lg:pb-9">
       <div className={sectionContainer}>
         <div data-animate="fade-up">
           <SectionHeading data={data} align="center" titleClass="lg:text-[clamp(2.3rem,3.7vw,3.25rem)]" descriptionClass="mx-auto max-w-[735px] lg:mt-3.5" />

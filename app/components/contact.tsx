@@ -22,7 +22,7 @@ export function Contact({
   };
 
   return (
-    <section id={data.id} className="relative isolate overflow-hidden bg-[#f1f5fb] py-10 lg:min-h-[846px] lg:bg-linear-to-b lg:from-[#d4deed] lg:via-[#ebf1f9] lg:to-[#f5f8fd] lg:py-[70px]">
+    <section id={data.id} className="relative isolate overflow-hidden bg-[#f1f5fb] py-12 lg:min-h-[846px] lg:bg-linear-to-b lg:from-[#d4deed] lg:via-[#ebf1f9] lg:to-[#f5f8fd] lg:py-[70px]">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[510px] lg:inset-y-0 lg:right-auto lg:left-0 lg:h-full lg:w-1/2">
         <Image src={data.backgroundImage} alt="" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover object-[center_43%] lg:object-[right_center]" />
         <div className="absolute inset-0 bg-linear-to-b from-white/60 via-white/10 to-[#f1f5fb] lg:hidden" />

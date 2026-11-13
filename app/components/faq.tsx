@@ -5,7 +5,7 @@ import { SectionHeading } from "./section-parts";
 
 export function FAQ({ data }: { data: SectionData["FAQ"] }) {
   return (
-    <section id={data.id} className="bg-white py-10">
+    <section id={data.id} className="bg-white py-12">
       <div className="mx-auto grid w-full max-w-[1440px] items-start gap-8 px-5 sm:px-8 lg:grid-cols-[.63fr_1fr] lg:grid-rows-[auto_1fr] lg:gap-x-[clamp(30px,3vw,46px)] lg:gap-y-0 xl:pr-8 xl:pl-[26px]">
         <div data-animate="fade-left" className="xl:pl-4">
           <SectionHeading data={data} titleClass="xl:text-[53px]" />
